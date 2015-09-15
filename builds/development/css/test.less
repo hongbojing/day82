@@ -1,0 +1,48 @@
+@lightRed:   #fdd;
+@lightGreen: #dfd;
+@lightBlue:  #ddf;
+
+@defaultThemeColor:@lightRed;
+@defaultRadius:30px;
+@defaultShapesWidth:200px;
+
+@borderSize:@defaultShapesWidth * 0.1;
+@borderColor:@defaultThemeColor - #222;
+
+.test{
+  display:inline-block;
+  width:200px;
+  height:200px;
+  background:@defaultThemeColor;
+  margin:20px;
+  border: @borderSize solid @borderColor;
+    &:hover{
+      background: @lightBlue;
+    }
+}
+
+.RoundedShape(@radius:@defaultRadius){
+  -webkit-border-radius:@radius;
+  -moz-border-radius:@radius;
+  border-radius:@radius;
+}
+
+.Round{
+  .RoundedShape(99999px);
+}
+
+.RoundedSquare{
+  .RoundedShape();
+}
+
+#test1{
+  .Round;
+}
+
+#test2{
+  .RoundedSquare();
+}
+
+#test3{
+  .RoundedShape(60px);
+}
