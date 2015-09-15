@@ -2,7 +2,7 @@
 @lightGreen: #dfd;
 @lightBlue:  #ddf;
 
-@defaultThemeColor:@lightRed;
+@defaultThemeColor:spin(@lightRed, 100);
 @defaultRadius:30px;
 @defaultShapesWidth:200px;
 
@@ -37,12 +37,15 @@
 
 #test1{
   .Round;
+  background: desaturate(@defaultThemeColor, 100%);
 }
 
 #test2{
   .RoundedSquare();
+  background: darken(@defaultThemeColor, 10%);
 }
 
 #test3{
   .RoundedShape(60px);
+  background: fadeout(@defaultThemeColor, 0%);
 }

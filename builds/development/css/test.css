@@ -2,9 +2,9 @@
   display: inline-block;
   width: 200px;
   height: 200px;
-  background: #ffdddd;
+  background: #e8ffdd;
   margin: 20px;
-  border: 20px solid #ddbbbb;
+  border: 20px solid #c6ddbb;
 }
 .test:hover {
   background: #ddddff;
@@ -23,14 +23,17 @@
   -webkit-border-radius: 99999px;
   -moz-border-radius: 99999px;
   border-radius: 99999px;
+  background: #eeeeee;
 }
 #test2 {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
+  background: #c6ffaa;
 }
 #test3 {
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
   border-radius: 60px;
+  background: #e8ffdd;
 }
